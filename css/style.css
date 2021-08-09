@@ -602,9 +602,10 @@ bottom footer css start
     text-transform: capitalize;
 }
 
+/*
 .bottom-f p:hover {
     color: #e84545;
-}
+}*/
 
 .bottom-f i {
     color: #e84545;

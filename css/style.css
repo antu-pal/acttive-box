@@ -1,0 +1,620 @@
+/*
+    1.Common css
+    2.Font import css
+    3.Menu css
+    4.Banner css
+    5.Service css
+    6.Gallery css
+    7.Team css
+    8.Feedback css
+    9.Download css
+    10.Footer css
+
+
+
+*/
+/*===================================================
+Table of content end
+=====================================================*/
+
+
+/*font-family: 'Open Sans', sans-serif;*/
+
+/*font-family: 'Raleway', sans-serif;*/
+
+
+/*=================================================
+font import css end
+==================================================*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clr {
+    clear: both;
+}
+
+.full-wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.m-30 {
+    margin: 0 30px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+/*========================================================
+common css end
+=========================================================*/
+
+/*========================================================
+menu css start
+========================================================*/
+.menu-bg {
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+
+}
+
+.menu-bg .menu {
+    height: 100px;
+
+}
+
+.menu-bg .menu .logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+.menu-bg .menu .logo img {
+    width: 100%;
+    padding-top: 38px;
+}
+
+.menu-bg .menu .menu-list {
+    width: 970px;
+    height: 100px;
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul li {
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul {
+    float: right;
+}
+
+.menu-bg .menu .menu-list ul li a {
+    font-family: 'Raleway', sans-serif;
+    line-height: 100px;
+    padding-left: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    transition: all linear 0.4s;
+}
+
+.menu-bg .menu .menu-list ul li:hover > a {
+    color: #e84545;
+}
+
+.menu-bg .menu .menu-list ul li .active {
+    color: #e84545;
+}
+
+
+/*=================================
+menu css end
+==================================*/
+
+
+/*===================================
+banner css start
+=====================================*/
+.banner-bg {
+    height: 750px;
+    background: url(../image/Box.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.banner-bg::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(43, 46, 74, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.banner-bg .banner {
+    height: 750px;
+    text-align: center;
+}
+
+.banner-bg .banner h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 71px;
+    padding: 245px 150px 20px;
+}
+
+
+.banner-bg .banner p {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+    padding: 0px 125px 75px;
+}
+
+.banner-bg .banner a {
+    display: inline-block;
+    color: #fff;
+    background: #e84545;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 46px;
+    padding: 0 54px;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.banner-bg .banner a:hover {
+    background: #fff;
+    color: #e84545;
+}
+
+/*===================================
+banner css end
+====================================*/
+
+
+/*===================================
+ service css start
+====================================*/
+
+.service-bg {
+    height: 520px;
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+
+.service-bg .service {
+    height: 100%;
+}
+
+.service-bg .service .service-item {
+    width: 370px;
+    height: 185px;
+    float: left;
+    margin-bottom: 75px;
+    text-align: center;
+
+}
+
+.service-bg .service .service-item img {
+    transition: all linear 0.2s;
+}
+
+.service-bg .service .service-item img:hover {
+    transform: scale(1.2);
+}
+
+.service-bg .service .service-item h5 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #2d3033;
+    padding: 30px 0 15px;
+}
+
+.service-bg .service .service-item p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #2d3033;
+    line-height: 21px;
+    padding: 0 21px;
+}
+
+/*======================================
+         service css end
+=======================================*/
+
+
+/*=====================================
+        gallery css start
+=====================================*/
+.gallery-bg .gallery-item {
+    width: 25%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-bg .gallery-item img {
+    width: 100%;
+    height: 345px;
+    animation: 0.2s linear;
+}
+
+.gallery-bg .gallery-item .gallery-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 69, 69, 0.9);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    transition: all linear 0.4s;
+}
+
+.gallery-bg .gallery-item:hover .gallery-overlay {
+    left: 0;
+}
+
+.gallery-bg .gallery-item .gallery-overlay .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-bg .gallery-item .gallery-overlay h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+
+}
+
+.gallery-bg .gallery-item .gallery-overlay p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/*==================================
+ gallery css end
+==================================*/
+
+
+/*=================================
+ team css start
+==================================*/
+
+
+.team-bg {
+    height: 580px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.team-bg .team {
+    height: 580px;
+
+}
+
+.team-bg .team .team-item {
+    width: 270px;
+    height: 580px;
+
+    float: left;
+}
+
+.team-bg .team .team-item img {
+    width: 100%;
+}
+
+.team-bg .team .team-item h4 {
+    text-transform: capitalize;
+    font-size: 22px;
+    font-family: ;
+    color: #353535;
+    padding-top: 25px;
+}
+
+.team-bg .team .team-item h6 {
+    text-transform: capitalize;
+    font-size: 13px;
+    font-family: ;
+    color: #e84545;
+    padding-top: 10px;
+}
+
+.team-bg .team .team-item p {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: 'railway-reg';
+    color: #353535;
+    line-height: 21px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.team-bg .team .team-item a i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #c6cacc;
+    line-height: 40px;
+    text-align: center;
+    color: #c6cacc;
+}
+
+.team-bg .team .team-item a:hover i {
+    background: #e84545;
+    color: #fff;
+}
+
+/*=====================================
+ team css end
+=======================================*/
+
+/*========================================
+ feed-back css start
+=========================================*/
+.feedback-bg {
+    height: 500px;
+    background: #53354a;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+.feedback-bg::after {
+    content: '';
+    width: 50%;
+    height: 500px;
+    background: url(../image/picture.jpg) no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.feedback-bg .feedback {
+    height: 500px;
+
+}
+
+.feedback-bg .feedback .feedback-text {
+    width: 500px;
+    height: 500px;
+    float: right;
+    position: relative;
+}
+
+.feedback-bg .feedback .feedback-text q {
+    font-family: 'cardo', serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 42px;
+    padding-top: 105px;
+    display: inline-block;
+    color: #fff;
+
+}
+
+.feedback-bg .feedback .feedback-text h6 {
+    font-family: 'raleway-bold';
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.feedback-bg .feedback .feedback-text ul {
+
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 105px;
+}
+
+.feedback-bg .feedback .feedback-text ul li {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    float: left;
+    margin-right: 8px;
+}
+
+.feedback-bg .feedback .feedback-text ul li.active {
+    background: #fff;
+}
+
+.feedback-bg .feedback .feedback-text ul li:last-child {
+    margin-right: 0;
+}
+
+/*=================
+ feed-back css end
+===================*/
+/*=================
+download css start
+===================*/
+.download-bg {
+    height: 140px;
+    margin-bottom: 100px;
+
+}
+
+.download-bg .download {
+    height: 140px;
+
+    text-align: center;
+}
+
+.download-bg .download p {
+    font-family: 'raleway-light';
+    font-size: 28px;
+    color: #353535;
+    padding-bottom: 21px;
+
+}
+
+.download-bg .download h4 {
+    font-family: 'raleway-bold';
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #2d3033;
+}
+
+.download-bg .download a {
+    font-family: 'raleway-semi';
+    display: inline-block;
+    color: #fff;
+    background: #e84545;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 46px;
+    border-radius: 5px;
+    padding: 0 83px;
+    margin-top: 30px;
+}
+
+.download-bg .download:hover a {
+    background: #fff;
+    color: #e84545;
+}
+
+/*=============================================
+ download css end
+===========================================*/
+/*=========================================
+ footer css start
+===========================================*/
+
+
+.footer-top-bg {
+    background: #3a3e64;
+    height: 250px;
+}
+
+.footer-top-bg .footer-top {
+
+    height: 250px;
+}
+
+.footer-top-bg .footer-top .footer-top-item {
+    height: 250px;
+    width: 370px;
+
+    float: left;
+    text-align: center;
+}
+
+.footer-top-bg .footer-top .footer-top-item h6 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'raleway-bold';
+    padding-bottom: 17px;
+    padding-top: 70px;
+}
+
+.footer-top-bg .footer-top .footer-top-item p {
+    font-size: 14px;
+    font-family: 'raleway-bold';
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 22.5px;
+}
+
+.footer-top-bg .footer-top .footer-top-item adress {
+    padding: 0 100px
+}
+
+.footer-top-bg .footer-top .footer-top-item a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    margin-top: 5px;
+    margin-right: 3px;
+}
+
+/*====================================
+footer css end
+==================================*/
+
+
+/*=======================================
+bottom footer css start
+========================================*/
+.bottom-f-bg {
+    height: 92px;
+    background-color: #313454;
+}
+
+.bottom-f {
+    padding: 29px;
+    width: 370px;
+    height: 90px;
+    text-align: center;
+}
+
+.bottom-f p {
+    font-size: 13px;
+    line-height: 22.5px;
+    color: #808080;
+    font-family: 'Raleway';
+    text-transform: capitalize;
+}
+
+.bottom-f p:hover {
+    color: #e84545;
+}
+
+.bottom-f i {
+    color: #e84545;
+}
+
+.bottom-f span {
+    font-family: 'raleway-reg';
+    color: #fff;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ bottom footer css ends 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
